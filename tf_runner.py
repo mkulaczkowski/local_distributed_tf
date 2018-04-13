@@ -61,7 +61,7 @@ def build_env(name, requirements=None, current_env=False, tf_version=''):
             f.write("%s %s\n" % (virtualenv_bin, virtualenv_path))
             f.write("source %s\n" % (activate_cmd))
             f.write("pip install tensorflow%s\n" % (tf_version))
-            f.write("pip install tensorport\n")
+            f.write("pip install clusterone\n")
             if requirements is not None:
                 requirements_cmd = 'pip install -r %s' % requirements
                 f.write("pip install -r %s\n" % (requirements))
@@ -171,7 +171,7 @@ def run_tf(cwd,
 
 if __name__ == "__main__":
     """
-        python tf_runner.py -module mnist -mode distributed -worker_replicas 2 -ps_replicas 1
+        python tf_runner.py --module mnist --mode distributed --worker-replicas 2 --ps-replicas 1
     """
     parser = argparse.ArgumentParser(description='Run TF experiment')
     parser.add_argument('--module', type=str, help="Python module")
