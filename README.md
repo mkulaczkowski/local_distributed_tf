@@ -1,2 +1,1 @@
-# local_distributed_tf
-A simple wrapper that enable users to test distributed Tensorflow
+# Prosty skrypt pozwalający uruchomić lokalnie Tensoflow >= 1.0 w trybie rozproszonym (distributed) 
