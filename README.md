@@ -2,4 +2,4 @@
 
 ##Sposób użycia
 
-python tf_runner.py -module mnist -mode distributed -worker_replicas 2 -ps_replicas 1
+python tf_runner.py --module mnist --mode distributed --worker_replicas 2 --ps_replicas 1
