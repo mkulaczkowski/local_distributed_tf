@@ -42,8 +42,8 @@ def build_env(name, requirements=None, current_env=False, tf_version=''):
         except:
             pybin = sys.executable
     else:
-        virtualenv_path = os.path.expanduser("~/.tensorport/env/%s/" % name)
-        env_script_path = os.path.expanduser("~/.tensorport/env/%s/bootstrap.sh" % name)
+        virtualenv_path = os.path.expanduser("~/.clusterone/env/%s/" % name)
+        env_script_path = os.path.expanduser("~/.clusterone/env/%s/bootstrap.sh" % name)
         try:
             os.makedirs(virtualenv_path)
         except:
